@@ -5,7 +5,8 @@ import androidx.room.PrimaryKey
 
 @Entity (tableName = "canciones")
 data class Canciones (
-    @PrimaryKey val tituloDeLaCancion:String,
+    @PrimaryKey val id: Int,
+    val tituloDeLaCancion:String,
     val autor: String,
     val videoURL: String
     )
